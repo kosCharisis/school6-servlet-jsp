@@ -124,7 +124,7 @@ public class TeacherDAOImpl implements ITeacherDAO {
                 teacher = new Teacher(rs.getInt("id"), rs.getString("firstname"), rs.getString("lastname"));
                 teachers.add(teacher);
             }
-            // logging
+            // Logging
             teachers.forEach(System.out::println);
             return teachers;
         } catch (SQLException e) {
